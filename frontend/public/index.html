@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Muhammad Shawaiz – Professional Web Developer based in Karachi, Pakistan. Building fast, modern, and responsive web experiences." />
+  <title>Misbha Tahir Iqbal– Web Developer</title>
+  <link rel="shortcut icon" href="./images/image copy 3.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">M<span>T</span></div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <div class="loader-text">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Misbha Tahir Iqbal</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#works" onclick="closeMenu()">Works</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      <li><a href="#contact" class="nav-cta" onclick="closeMenu()">Hire Me ✦</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+    <aside class="hero-sidebar reveal-left">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img src="./images/Misbha Pic.jpeg" alt="Misbha Tahir Iqbal" />
+      </div>
+      <div class="hero-name">Misbha Tahir Iqbal</div>
+      <div class="hero-role">Website Developer based in Freelancer <br />Karachi, Pakistan 🇵🇰</div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/misbha-tahir-iqbal-a8b287385/" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/mishba-0" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://vercel.com/mishba-0s-projects" aria-label="vercel / vercel"><i class="fas fa-play"></i></a>
+        <a href="https://app.netlify.com/teams/mishba-0/projects" aria-label="Netlify"><i
+            class="devicon-netlify-plain colored"></i>🌐</a>
+
+      </div>
+    </aside>
+
+    <div class="hero-content">
+      <div class="hero-main reveal">
+        <div class="hero-eyebrow">Hello There! 👋</div>
+        <h1 class="hero-title">
+          I'M <span class="accent">MISBHA<br />TAHIR IQBAL</span>, A PASSIONATE<br />
+          <span class="outline">WEBSITE DEVELOPER</span><br />
+          BUILDING FAST, USER-FRIENDLY,<br />AND MODERN WEB EXPERIENCES.
+        </h1>
+        <div class="avail-badge"><span class="avail-dot"></span> Available for Freelancing</div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <a href="./images/Misbhacv.png" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-ticker reveal">
+        <div class="ticker-inner" id="ticker">
+          <span class="ticker-item">I build <span>beautiful websites</span> ✦</span>
+          <span class="ticker-item">Using <span>HTML, CSS, JavaScript</span> ✦</span>
+          <span class="ticker-item">And modern <span>React & Laravel</span> ✦</span>
+          <span class="ticker-item">Fast, <span>responsive</span> & accessible ✦</span>
+          <span class="ticker-item">I build <span>beautiful websites</span> ✦</span>
+          <span class="ticker-item">Using <span>HTML, CSS, JavaScript</span> ✦</span>
+          <span class="ticker-item">And modern <span>React & Laravel</span> ✦</span>
+          <span class="ticker-item">Fast, <span>responsive</span> & accessible ✦</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-pad">
+    <div class="container">
+      <div class="section-card">
+        <p class="section-eyebrow reveal">Services</p>
+        <h2 class="section-title reveal">Quality Services</h2>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <h3 class="service-name">Front-End Development</h3>
+            <p class="service-desc">I use HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js to build responsive
+              and interactive websites.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3 class="service-name">Back-End Development</h3>
+            <p class="service-desc">I developer secure and scalable web apps using JavaScript, ES6, React, Node.js,
+              MongoDB, and Express
+              Server.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 class="service-name">Freelancer Development</h3>
+            <p class="service-desc">Professional website development services including responsive design,
+              frontend development, backend integration, and Firebase deployment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-card">
+        <p class="section-eyebrow reveal">Background</p>
+        <h2 class="section-title reveal">Experience & Education</h2>
+        <div class="about-grid">
+          <!-- Experience -->
+          <div class="reveal-left">
+            <h3 class="about-col-title"><span></span>Experience</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-icon"><i class="fas fa-code"></i></div>
+                <div class="tl-body">
+                  <span class="tl-date">March 2025 – Aug 2026</span>
+                  <h4 class="tl-role">Front-End Developer</h4>
+                  <span class="tl-company">DevelopersHub Corporation©</span>
+                  <p class="tl-desc"> Experienced Front-End Developer with 1 year of hands-on experience
+                    building responsive, modern, and user-friendly websites using
+                    HTML, CSS, JavaScript, Bootstrap, React, and Firebase.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-icon"><i class="fas fa-database"></i></div>
+                <div class="tl-body">
+                  <span class="tl-date">Aug 2025 – Dec 2024</span>
+                  <h4 class="tl-role">Freelance Developer</h4>
+                  <p class="tl-desc">💼 Freelance Developer
+                    Providing professional web development services for clients, including
+                    responsive website design, frontend development, bug fixing, website
+                    optimization, and Firebase deployment. Successfully delivered modern,
+                    user-friendly, and mobile-responsive web solutions based on client requirements..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Education -->
+          <div class="reveal-right">
+            <h3 class="about-col-title"><span></span>Education</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-icon"><i class="fas fa-school"></i></div>
+                <div class="tl-body">
+                  <span class="tl-date">2025 – 2026</span>
+                  <h4 class="tl-role">Intermediate</h4>
+                  <span class="tl-company">Govt. S.M.B Fatima Jinah Degree Girls college Karachi</span>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-icon"><i class="fas fa-book"></i></div>
+                <div class="tl-body">
+                  <span class="tl-date">2024 – 2025</span>
+                  <h4 class="tl-role">Matric in Bio Science </h4>
+                  <span class="tl-company">National English Grammar school karachi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <div class="section-card">
+        <p class="section-eyebrow reveal">Expertise</p>
+        <h2 class="section-title reveal">Let's Explore My Skills</h2>
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skills-loading"><i class="fas fa-spinner fa-spin"></i> Loading skills...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="works" class="section-pad">
+    <div class="container">
+      <div class="section-card">
+        <p class="section-eyebrow reveal">Portfolio</p>
+        <h2 class="section-title reveal">My Projects</h2>
+        <div class="projects-grid">
+
+
+
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/image/Growthia.png" alt="Growthia">
+            </div>
+            <div class="project-info">
+              <h3>Growthia</h3>
+              <p>The middle part of the website consists of an attractive Hero Section. It features a blurred background
+                image with a large, bold white heading that reads "Welcome to My Website".</p>
+              <div class="project-links">
+                <a href="https://stellar-pothos-df5276.netlify.app/" class="demo-btn">View Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 1 -->
+
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/image copy 2.png" alt="BurgerHub">
+            </div>
+            <div class="project-info">
+              <h3>BurgerHub</h3>
+              <p>This is the top section of the website, which features a sleek black navigation bar. On the far left,
+                the brand name "BurgerHub" is displayed with "Burger" in white and "Hub" highlighted in orange.</p>
+              <div class="project-links">
+                <a href="https://mishba-0.github.io/Burger-Hub-/" class="demo-btn">View Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/portflio.png" alt="improve Skill">
+            </div>
+            <div class="project-info">
+              <h3>Portfolio</h3>
+              <p>This is the top section of the website, which features a modern, dark-themed navigation bar with
+                rounded corners. On the left, the text "Portfolio." skill and tech icons orbiting the center
+              </p>
+              <div class="project-links">
+                <a href="https://cozy-froyo-130e4e.netlify.app/" class="demo-btn">View Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/image/Admin.png" alt="Admin">
+            </div>
+            <div class="project-info">
+              <h3>Admin</h3>
+              <p>This image displays an admin panel interface with a clean layout. On the left side, there is a dark
+                blue sidebar titled "O ADMIN." that contains main navigation links including Dashboard.
+              </p>
+              <div class="project-links">
+                <a href="https://clever-dolphin-d50272.netlify.app/" class="demo-btn">View Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/image/Apexcify.png" alt="Apexcify">
+            </div>
+            <div class="project-info">
+              <h3>Apexcify</h3>
+              <p>The main body of the webpage consists of a professional technology-oriented hero section set against a
+                black background. The left side features a bold heading that reads "Innovating Solutions</p>
+              <div class="project-links">
+                <a href="https://amazing-sable-688ff1.netlify.app/" class="demo-btn">View Demo</a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card zoom-in">
+            <div class="project-img">
+              <img src="./images/image copy.png" alt="Growthia">
+            </div>
+            <div class="project-info">
+              <h3>ProStore</h3>
+              <p>The webpage features a clean product catalog arranged in a four-column grid. Each card displays a
+                high-quality product image, title, price, and a pink "Add to Cart" button.</p>
+              <div class="project-links">
+                <a href="https://legendary-faloodeh-6fc5dc.netlify.app/" class="demo-btn">View Demo</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-pad">
+  <div class="container">
+    <div class="section-card">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Get in Touch with Me!</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ci-label">Our Address</div>
+              <div class="ci-value">Garden, West Karachi, Pakistan</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ci-label">Contact Number</div>
+              <div class="ci-value">+92 3441125218</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="ci-label">Email Us</div>
+              <div class="ci-value">misbhatahiriqbal@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form reveal-right" id="contactForm" action="https://formsubmit.co/misbhatahiriqbal@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your Name" required />
+              <span class="field-error" id="nameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="Your Email" required />
+              <span class="field-error" id="emailErr"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Your Message</label>
+            <textarea id="fmsg" name="message" placeholder="Write Your message..." required></textarea>
+            <span class="field-error" id="msgErr"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>ARE YOU READY TO <span>KICKSTART</span> YOUR<br /><span>PROJECT</span> WITH A TOUCH OF MAGIC?</h2>
+        <p>Reach out and let's make it happen 🚀 I'm also available for full-time or part-time opportunities.</p>
+        <a href="#contact" class="btn btn-white">Let's Talk <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>Copyright © 2026 <strong>Misbha Tahir Iqbal</strong> – All rights reserved.</span>
+      <span>Crafted with <span class="heart">❤️</span> in Karachi</span>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
