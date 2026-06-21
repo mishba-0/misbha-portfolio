@@ -55,7 +55,7 @@ router.post('/', validateContact, async (req, res) => {
 
   // ── Auto-reply to sender ──
   const autoReply = {
-    from: `"Muhammad Shawaiz" <${process.env.MAIL_USER}>`,
+    from: `"Misbha Tahir Iqbal" <${process.env.MAIL_USER}>`,
     to: email,
     subject: `Thanks for reaching out, ${name}! 🙌`,
     html: `

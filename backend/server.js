@@ -21,15 +21,17 @@ app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 
 // ── CORS ──
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL || 'http://localhost:3000',
-    'http://127.0.0.1:3000',
-    'http://localhost:5500',
-    'http://127.0.0.1:5500'
-  ],
+ origin: [
+  "http://localhost:3000",
+  "http://127.0.0.1:3000",
+  "http://localhost:5500",
+  "https://misbha-portfolio.vercel.app"
+],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+
 
 // ── Body Parsing ──
 app.use(express.json({ limit: '10kb' }));
@@ -48,14 +50,18 @@ app.use('/api/testimonials', testimonialsRouter);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
-    message: 'Muhammad Shawaiz Portfolio API is running!',
+    message: 'Misbha Tahir Iqbal Portfolio API is running!',
     timestamp: new Date().toISOString(),
     version: '1.0.0'
   });
 });
 
 // ── Catch-all: serve frontend ──
-app.get('/{*splat}', (req, res) => {
+// app.get('/{*splat}', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../frontend/public/index.html'));
+// });
+
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/public/index.html'));
 });
 
