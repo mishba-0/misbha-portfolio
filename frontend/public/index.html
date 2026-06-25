@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Muhammad Shawaiz – Professional Web Developer based in Karachi, Pakistan. Building fast, modern, and responsive web experiences." />
-  <title>Misbha Tahir Iqbal– Web Developer</title>
+  <meta property="og:title" content="Misbha Tahir Iqbal – Web Developer">
+  <meta property="og:description"
+    content="Professional Web Developer based in Karachi, Pakistan. Building fast, modern, and responsive web experiences.">
+<meta property="og:image" content="https://misbha-portfolio.vercel.app/images/portfolio-preview.png">
+<meta property="og:type" content="website">
+  <meta property="og:url" content="https://misbha-portfolio.vercel.app/">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Misbha Tahir Iqbal">
+  <link rel="canonical" href="https://misbha-portfolio.vercel.app">
   <link rel="shortcut icon" href="./images/image copy 3.png" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
@@ -314,63 +319,64 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section-pad">
-  <div class="container">
-    <div class="section-card">
-      <p class="section-eyebrow reveal">Contact</p>
-      <h2 class="section-title reveal">Get in Touch with Me!</h2>
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <div class="ci-item">
-            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <div class="ci-label">Our Address</div>
-              <div class="ci-value">Garden, West Karachi, Pakistan</div>
+    <div class="container">
+      <div class="section-card">
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Get in Touch with Me!</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="ci-label">Our Address</div>
+                <div class="ci-value">Garden, West Karachi, Pakistan</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="ci-label">Contact Number</div>
+                <div class="ci-value">+92 3441125218</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="ci-label">Email Us</div>
+                <div class="ci-value">misbhatahiriqbal@gmail.com</div>
+              </div>
             </div>
           </div>
-          <div class="ci-item">
-            <div class="ci-icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <div class="ci-label">Contact Number</div>
-              <div class="ci-value">+92 3441125218</div>
+
+          <form class="contact-form reveal-right" id="contactForm"
+            action="https://formsubmit.co/misbhatahiriqbal@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your Name" required />
+                <span class="field-error" id="nameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="Your Email" required />
+                <span class="field-error" id="emailErr"></span>
+              </div>
             </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <div class="ci-label">Email Us</div>
-              <div class="ci-value">misbhatahiriqbal@gmail.com</div>
+            <div class="form-group">
+              <label for="fmsg">Your Message</label>
+              <textarea id="fmsg" name="message" placeholder="Write Your message..." required></textarea>
+              <span class="field-error" id="msgErr"></span>
             </div>
-          </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
         </div>
-        
-        <form class="contact-form reveal-right" id="contactForm" action="https://formsubmit.co/misbhatahiriqbal@gmail.com" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">Full Name</label>
-              <input type="text" id="fname" name="name" placeholder="Your Name" required />
-              <span class="field-error" id="nameErr"></span>
-            </div>
-            <div class="form-group">
-              <label for="femail">Email Address</label>
-              <input type="email" id="femail" name="email" placeholder="Your Email" required />
-              <span class="field-error" id="emailErr"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="fmsg">Your Message</label>
-            <textarea id="fmsg" name="message" placeholder="Write Your message..." required></textarea>
-            <span class="field-error" id="msgErr"></span>
-          </div>
-          <button type="submit" class="btn btn-primary" id="submitBtn">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- CTA BANNER -->
   <div class="cta-banner reveal">
